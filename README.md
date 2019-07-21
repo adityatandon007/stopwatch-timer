@@ -1,68 +1,51 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Stopwatch Timer App :watch:
 
-## Available Scripts
+[![Support via PayPal][badge_paypal_donate]][paypal_donations]
 
-In the project directory, you can run:
+<a href="https://paypal.me/adityatandon007" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
-### `npm start`
+> A React redux powered stopwatch timer app.
+**Hey!** :blush: This is a simple stopwatch timer app.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+[![stopwatch-timer](https://i.imgur.com/Q2vTYZq.png)](https://adityatandon.github.io/stopwatch-timer)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## How to build
 
-### `npm test`
+To install, clone or download the repository.
+in the project folder, run the command
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```javascript
+yarn install
+```
 
-### `npm run build`
+then
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```javascript
+yarn start
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+to run the app in development mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tools
 
-### `npm run eject`
+This project was built using **Create-React-App**  
+This project is hosted on **Github Pages [here](https://adityatandon007.github.io/stopwatch-timer)**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :sparkling_heart: Support my projects
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+I open-source almost everything I can, and I try to reply to everyone needing help using these projects. Obviously, this takes time. You can integrate and use these projects in your applications *for free*! You can even change the source code and redistribute (even resell it).
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+However, if you get some profit from this or just want to encourage me to continue creating stuff, there are few ways you can do it:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ - Starring and sharing the projects you like :rocket:
+ - [![Support via PayPal][badge_paypal_donate]][paypal_donations]—You can make one-time donations via PayPal. I'll probably buy a :tea:
 
-## Learn More
+Thanks! :heart:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## :scroll: License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[MIT] license © [Aditya Tandon][website]
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[badge_paypal_donate]: https://cdn.rawgit.com/twolfson/paypal-github-button/1.0.0/dist/button.svg
+[paypal_donations]: https://www.paypal.me/adityatandon007
+[website]: https://adityatandon007.github.io
