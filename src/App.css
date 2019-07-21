@@ -41,3 +41,10 @@ h3, p {
   outline: none;
   cursor: pointer;
 }
+
+.btn-disable{
+  cursor: not-allowed;
+  pointer-events: none;
+  color: gray;
+  background-color: lightgray;
+}

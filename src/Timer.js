@@ -12,6 +12,7 @@ class Timer extends Component {
       currentMillisec: 0,
       intervalId: '',
       startStopButton: 'Start',
+      resetDisabled: true
     };
   }
 
@@ -66,25 +67,19 @@ class Timer extends Component {
     let ms = this.state.currentMillisec;
     this.setState({
       currentMillisec: ms,
-      startStopButton: 'Start'
+      startStopButton: 'Start',
+      resetDisabled: false
     })
   }
 
   resetTimer(){
     this.setState({
-      currentHr: 0
-    })
-    this.setState({
-      currentMin: 0
-    })
-    this.setState({
-      currentSec: 0
-    })
-    this.setState({
-      currentMillisec: 0
-    })
-    this.setState({
-      startStopButton: 'Start'
+      currentHr: 0,
+      currentMin: 0,
+      currentSec: 0,
+      currentMillisec: 0,
+      startStopButton: 'Start',
+      resetDisabled: true
     })
   }
 
@@ -99,7 +94,7 @@ class Timer extends Component {
         milliSec={this.state.currentMillisec} 
         />
         <button className="btn" onClick={this.timerButton.bind(this)} >{this.state.startStopButton}</button>
-        <button className="btn" onClick={this.resetTimer.bind(this)} >Reset</button>
+        <button className={this.state.resetDisabled ? 'btn btn-disable' : 'btn'} disabled={this.state.resetDisabled} onClick={this.resetTimer.bind(this)} >Reset</button>
       </div>
     );
   }
@@ -123,6 +118,7 @@ const mapStateToProps = state => ({
       currentMillisec: state.currentMillisec,
       intervalId: state.intervalId,
       startStopButton: state.startStopButton,
+      resetDisabled: state.resetDisabled
 })
 const mapDispatchToProps = (dispatch) => ({
   toggleStartStopButton(label) {
