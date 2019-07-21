@@ -5,7 +5,7 @@
 <a href="https://paypal.me/adityatandon007" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/yellow_img.png" alt="Buy Me A Coffee"></a>
 
 > A React redux powered stopwatch timer app.
-**Hey!** :blush: This is a simple stopwatch timer app.
+**Hey!** :blush: This is a simple stopwatch timer app that supports start/stop and reset feature. The timer can started/stopped using spacebar as well.
 
 [![stopwatch-timer](https://i.imgur.com/Q2vTYZq.png)](https://adityatandon.github.io/stopwatch-timer)
 
