@@ -96,6 +96,7 @@ class Timer extends Component {
         milliSec={this.state.currentMillisec} 
         />
         <button onClick={this.timerButton.bind(this)} >{this.state.startStopButton}</button>
+        <button onClick={this.resetTimer.bind(this)} >Reset</button>
       </div>
     );
   }
