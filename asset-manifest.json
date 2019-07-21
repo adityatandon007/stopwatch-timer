@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/stopwatch-timer/static/css/main.2cce8147.chunk.css",
-    "main.js": "/stopwatch-timer/static/js/main.024b220e.chunk.js",
-    "main.js.map": "/stopwatch-timer/static/js/main.024b220e.chunk.js.map",
+    "main.css": "/stopwatch-timer/static/css/main.75f3c1d4.chunk.css",
+    "main.js": "/stopwatch-timer/static/js/main.e14b5269.chunk.js",
+    "main.js.map": "/stopwatch-timer/static/js/main.e14b5269.chunk.js.map",
     "runtime~main.js": "/stopwatch-timer/static/js/runtime~main.34413543.js",
     "runtime~main.js.map": "/stopwatch-timer/static/js/runtime~main.34413543.js.map",
     "static/js/2.07df93b6.chunk.js": "/stopwatch-timer/static/js/2.07df93b6.chunk.js",
     "static/js/2.07df93b6.chunk.js.map": "/stopwatch-timer/static/js/2.07df93b6.chunk.js.map",
     "index.html": "/stopwatch-timer/index.html",
-    "precache-manifest.8ca788b58ed39f218b1598f2c1d8d53f.js": "/stopwatch-timer/precache-manifest.8ca788b58ed39f218b1598f2c1d8d53f.js",
+    "precache-manifest.81e6bd503c384a065911a829b7978b90.js": "/stopwatch-timer/precache-manifest.81e6bd503c384a065911a829b7978b90.js",
     "service-worker.js": "/stopwatch-timer/service-worker.js",
-    "static/css/main.2cce8147.chunk.css.map": "/stopwatch-timer/static/css/main.2cce8147.chunk.css.map"
+    "static/css/main.75f3c1d4.chunk.css.map": "/stopwatch-timer/static/css/main.75f3c1d4.chunk.css.map"
   }
 }
