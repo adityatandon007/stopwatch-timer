@@ -3,10 +3,8 @@ import { connect } from 'react-redux';
 import { toggleStartStopButton} from './actionCreators';
 
 class Timer extends Component {
-  props= {
-  }
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       currentHr: 0,
       currentMin: 0,
@@ -92,27 +90,28 @@ class Timer extends Component {
 
   render() {
     return (
-      <div>
+      <div className="timer">
+        <h3>Stopwatch Timer</h3>
         <TimerDisplay
         hr={this.state.currentHr}
         min={this.state.currentMin} 
         sec={this.state.currentSec}
         milliSec={this.state.currentMillisec} 
         />
-        <button onClick={this.timerButton.bind(this)} >{this.state.startStopButton}</button>
-        <button onClick={this.resetTimer.bind(this)} >Reset</button>
+        <button className="btn" onClick={this.timerButton.bind(this)} >{this.state.startStopButton}</button>
+        <button className="btn" onClick={this.resetTimer.bind(this)} >Reset</button>
       </div>
     );
   }
 }
 
 const TimerDisplay =(props)=> (
-      <div>
+      <div>  
         <p>
-        <span>{props.hr.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span> :  
-        <span>{props.min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span> :
-        <span> {props.sec.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span> :
-        <span> {props.milliSec.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span>
+        <span className="hrs">{props.hr.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span> :  
+        <span className="minutes">{props.min.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span> :
+        <span className="seconds"> {props.sec.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})}</span> :
+        <span className="milliseconds"> {props.milliSec.toLocaleString('en-US', {minimumIntegerDigits: 2, useGrouping:false})} </span>
         </p>
       </div>
     )
