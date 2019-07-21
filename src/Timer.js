@@ -60,14 +60,15 @@ class Timer extends Component {
         })
       }
     },10)
-    this.setState({intervalId: timerInterval})
+    this.setState({intervalId: timerInterval,startStopButton: 'Stop'})
   }
 
   stopTimer(){
     clearInterval(this.state.intervalId)
     let ms = this.state.currentMillisec;
     this.setState({
-      currentMillisec: ms
+      currentMillisec: ms,
+      startStopButton: 'Start'
     })
   }
 
@@ -83,6 +84,9 @@ class Timer extends Component {
     })
     this.setState({
       currentMillisec: 0
+    })
+    this.setState({
+      startStopButton: 'Start'
     })
   }
 
