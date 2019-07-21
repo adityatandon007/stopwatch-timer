@@ -26,6 +26,14 @@ class Timer extends Component {
     }
   }
 
+  onKeyPressed(event){
+    let key = event.which || event.keyCode;
+    if(key === 32 ){
+      event.preventDefault();
+      this.timerButton();
+    }
+  } 
+
   startTimer(){
     let timerInterval= setInterval(()=>{
       let ms = this.state.currentMillisec+1;
@@ -85,7 +93,7 @@ class Timer extends Component {
 
   render() {
     return (
-      <div className="timer">
+      <div id="stopwatch" className="timer" tabIndex="0" onKeyDown={this.onKeyPressed.bind(this)}>
         <h3>Stopwatch Timer</h3>
         <TimerDisplay
         hr={this.state.currentHr}
@@ -97,7 +105,7 @@ class Timer extends Component {
         <button className={this.state.resetDisabled ? 'btn btn-disable' : 'btn'} disabled={this.state.resetDisabled} onClick={this.resetTimer.bind(this)} >Reset</button>
       </div>
     );
-  }
+  } 
 }
 
 const TimerDisplay =(props)=> (
